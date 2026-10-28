@@ -3,7 +3,7 @@
    Mode demo: localStorage
    Mode online: Supabase
 */
-const SUPABASE_URL = "https://qqingsyczvncvmztyiji.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://qqingsyczvncvmztyiji.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_6h2HHfXRMIFfrpbpuVfuVQ_sJll3eqm";
 const GROUP_CODES = {
   "Garuda Pancasila": "GARUDA01",
