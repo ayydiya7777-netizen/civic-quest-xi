@@ -204,11 +204,12 @@ async function login(e) {
   const code=$("access").value.trim();
   const members=$("members").value.trim();
 
-  if(code!==GROUP_ACCESS_CODE){
-    notify("Kode akses tidak sesuai. Tanyakan kepada guru.");
-    return;
-  }
+  const expectedCode = GROUP_CODES[group];
 
+if (!expectedCode || code !== expectedCode) {
+  notify("Nama kelompok atau kode akses tidak sesuai.");
+  return;
+}
   const key=keyFor(group,code);
   state=emptyState();
   if(online){
