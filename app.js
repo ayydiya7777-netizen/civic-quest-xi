@@ -5,7 +5,18 @@
 */
 const SUPABASE_URL = "https://qqingsyczvncvmztyiji.supabase.co/rest/v1/";
 const SUPABASE_ANON_KEY = "sb_publishable_6h2HHfXRMIFfrpbpuVfuVQ_sJll3eqm";
-const GROUP_ACCESS_CODE = "CQXI2026";
+const GROUP_CODES = {
+  "Garuda Pancasila": "GARUDA01",
+  "Bhinneka Tunggal Ika": "BHINNEKA02",
+  "Cakra Nusantara": "CAKRA03",
+  "Patriot Muda": "PATRIOT04",
+  "Ksatria Pancasila": "KSATRIA05",
+  "Benteng Persatuan": "BENTENG06",
+  "Generasi Emas": "EMAS07",
+  "Garda Konstitusi": "GARDA08",
+  "Pemuda Demokrasi": "DEMOKRASI09",
+  "Pelopor Keadilan": "ADIL10"
+};
 const TEACHER_CODE = "GURU-CQXI";
 
 const online = Boolean(
