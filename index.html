@@ -153,6 +153,67 @@ footer{text-align:center;padding:25px;color:var(--muted);font-size:12px}
 }
 </style>
 
+
+/* PETUNJUK PEMBELAJARAN */
+.guide-title {
+  color: var(--navy);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.guide-subtitle {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.guide-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 13px 0;
+}
+
+.guide-number {
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-weight: 800;
+}
+
+.guide-step p {
+  margin: 2px 0;
+}
+
+.guide-highlight {
+  border-left: 5px solid var(--gold);
+}
+
+.guide-list {
+  padding-left: 20px;
+}
+
+.guide-list li {
+  margin-bottom: 8px;
+}
+
+@media(max-width:750px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </head>
 <body>
 <header>
@@ -167,6 +228,106 @@ footer{text-align:center;padding:25px;color:var(--muted);font-size:12px}
 
 <main>
 <section id="login">
+
+<!-- TUJUAN PEMBELAJARAN -->
+<div class="card guide-highlight">
+  <h2 class="guide-title">🎯 Tujuan Pembelajaran</h2>
+  <p class="guide-subtitle">
+    Melalui CIVIC QUEST XI, peserta didik diharapkan mampu:
+  </p>
+  <ol class="guide-list">
+    <li>Menganalisis permasalahan nyata yang berkaitan dengan nilai-nilai Pancasila.</li>
+    <li>Mengidentifikasi penyebab dan dampak permasalahan dalam kehidupan masyarakat.</li>
+    <li>Menemukan dasar hukum yang relevan dengan permasalahan yang dikaji.</li>
+    <li>Merancang solusi berdasarkan nilai-nilai Pancasila serta menunjukkan sikap tanggung jawab dan kepedulian sebagai warga negara.</li>
+  </ol>
+</div>
+
+<!-- PETUNJUK PENGGUNAAN SISWA -->
+<div class="card">
+  <h2 class="guide-title">📖 Petunjuk Penggunaan LKPD</h2>
+  <p class="guide-subtitle">
+    Ikuti tujuh langkah berikut untuk menyelesaikan petualangan belajar:
+  </p>
+
+  <div class="guide-step">
+    <span class="guide-number">1</span>
+    <div>
+      <b>Pilih nama kelompok</b>
+      <p class="muted">Masukkan nama kelompok sesuai daftar yang telah diberikan guru.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">2</span>
+    <div>
+      <b>Masukkan kode akses</b>
+      <p class="muted">Gunakan kode akses kelompok untuk masuk ke dalam permainan.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">3</span>
+    <div>
+      <b>Baca briefing misi</b>
+      <p class="muted">Pelajari informasi, permasalahan, dan tantangan pada setiap misi.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">4</span>
+    <div>
+      <b>Selesaikan mini-game</b>
+      <p class="muted">Kerjakan permainan edukatif untuk menguji pemahaman materi Pancasila.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">5</span>
+    <div>
+      <b>Kerjakan laporan investigasi</b>
+      <p class="muted">Analisis kasus, penyebab, dampak, dasar hukum, dan solusi.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">6</span>
+    <div>
+      <b>Kirim laporan</b>
+      <p class="muted">Pastikan jawaban sudah lengkap, kemudian kirim laporan investigasi.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <span class="guide-number">7</span>
+    <div>
+      <b>Pantau hasil petualangan</b>
+      <p class="muted">Lihat perolehan XP, lencana, jumlah misi selesai, dan progres kelompok.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PANDUAN DASHBOARD GURU -->
+<div class="card guide-highlight">
+  <h2 class="guide-title">👩‍🏫 Panduan Penggunaan Dashboard Guru</h2>
+  <p class="guide-subtitle">
+    Dashboard Guru digunakan untuk memantau aktivitas dan hasil belajar peserta didik.
+  </p>
+
+  <ol class="guide-list">
+    <li>Klik tombol <b>Dashboard Guru</b> pada halaman awal.</li>
+    <li>Masukkan kode guru yang telah ditentukan.</li>
+    <li>Buka dashboard untuk melihat jumlah kelompok, laporan, total XP, dan kelompok yang telah menyelesaikan lima misi.</li>
+    <li>Periksa <b>Leaderboard</b> untuk mengetahui perolehan XP setiap kelompok.</li>
+    <li>Tinjau laporan investigasi kelompok melalui tabel yang tersedia.</li>
+    <li>Gunakan tombol <b>Unduh CSV laporan</b> atau <b>Unduh CSV progres</b> untuk menyimpan data hasil pembelajaran.</li>
+  </ol>
+
+  <div class="notice">
+    <b>Catatan:</b> Guru perlu menggunakan kode akses khusus guru. Pastikan koneksi internet tersedia ketika menggunakan mode online agar data dapat tersinkronisasi melalui Supabase.
+  </div>
+</div>
+
  <div class="hero">
   <div class="eyebrow">DIGITAL LEARNING ADVENTURE</div>
   <h2>Jadilah Investigator Pancasila!</h2>
